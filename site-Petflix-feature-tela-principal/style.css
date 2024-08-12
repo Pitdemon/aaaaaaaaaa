@@ -8,7 +8,7 @@ body {
     overflow: hidden;
     color: white;
     font-family: 'Arial', sans-serif;
-    perspective: 1000px; /* Perspectiva para efeito 3D */
+    perspective: 1000px; 
 }
 
 .container {
@@ -33,9 +33,9 @@ body {
     height: 250px;
     background: url('./Imagens/logo-icon.png') no-repeat center center;
     background-size: contain;
-    transform: scale(0) translateZ(-300px); /* Inicia pequena e distante */
-    animation: logoAnimation 2.5s ease forwards; /* Animação suavizada */
-    filter: blur(6px); /* Blur mais sutil */
+    transform: scale(0) translateZ(-300px); 
+    animation: logoAnimation 2.5s ease forwards; 
+    filter: blur(6px); 
 }
 
 .texto-logo {
@@ -43,10 +43,10 @@ body {
     height: auto;
     top: 25%;
     left: 25%;
-    transform: translateY(100vh); /* Começa fora da tela na parte inferior */
+    transform: translateY(100vh); 
     opacity: 0;
     transition: opacity 1s, transform 1s;
-    animation: textoLogoAnimation 2s ease-out forwards 2.5s; /* Animação atrasada */
+    animation: textoLogoAnimation 2s ease-out forwards 2.5s; 
 }
 
 .texto-logo img {
@@ -120,12 +120,12 @@ body {
     0% {
         transform: scale(0.01) translateZ(-300px);
         opacity: 0;
-        filter: blur(5px); /* Blur mais sutil */
+        filter: blur(5px); 
     }
     50% {
         transform: scale(1) translateZ(0);
         opacity: 1;
-        filter: blur(3px); /* Reduz o blur ao meio */
+        filter: blur(3px); 
     }
 
     75% {
@@ -135,9 +135,10 @@ body {
     }
 
     100% {
-        transform: scale(1.1) translateZ(500px); /* Move a logo para frente */
+        transform: scale(1.1) translateZ(500px); 
         opacity: 0;
-        filter: blur(0); /* Remove o blur */
+        filter: blur(0); 
+        
     }
 }
 
